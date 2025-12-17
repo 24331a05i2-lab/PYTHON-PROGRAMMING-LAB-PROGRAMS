@@ -1,0 +1,13 @@
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+print("Absolute value of a-b:", abs(a - b))
+print("a raised to b:", pow(a, b))
+print("Maximum:", max(a, b))
+print("Minimum:", min(a, b))
+c = float(input("Enter a floating-point number: "))
+print("Rounded value:", round(c))
+numbers = [a, b, int(c)]
+print("Sum of numbers:", sum(numbers))
+expr = input("Enter a simple expression (like 2+3*4): ")
+print("Result of expression:", eval(expr))
+print("Type of variable c:", type(c))
