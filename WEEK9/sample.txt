@@ -1,0 +1,5 @@
+Python Programming
+File Handling Methods
+read()
+readline()
+readlines()
