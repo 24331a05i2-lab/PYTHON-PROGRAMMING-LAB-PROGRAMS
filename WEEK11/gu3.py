@@ -1,0 +1,13 @@
+from tkinter import *
+root = Tk()
+root.title("Geometry Methods")
+root.geometry("400x300")
+frame1 = Frame(root)
+frame1.pack()
+Label(frame1, text="Using pack()").pack()
+frame2 = Frame(root)
+frame2.pack()
+Label(frame2, text="Grid 1").grid(row=0, column=0)
+Label(frame2, text="Grid 2").grid(row=0, column=1)
+Label(root, text="Using place()").place(x=150, y=200)
+root.mainloop()
