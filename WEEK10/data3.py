@@ -1,18 +1,21 @@
 import pandas as pd
 
-data = {'Name': ['A', 'B', None],
-        'Age': [25, None, 23],
-        'Marks': [90, 85, 85]}
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+    'Age': [20, None, 21, 23],
+    'Marks': [85, 90, None, 88]
+}
 
 df = pd.DataFrame(data)
 
-# Fill missing values
+print("Original Data:")
+print(df)
+
 df.fillna(0, inplace=True)
 
-# Remove duplicates
-df.drop_duplicates(inplace=True)
+df['Total'] = df['Marks'] + 5
 
-# Add new column
-df['Total'] = df['Marks'] + 10
+df.rename(columns={'Marks': 'Score'}, inplace=True)
 
+print("\nModified Data:")
 print(df)
